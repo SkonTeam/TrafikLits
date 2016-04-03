@@ -1,0 +1,17 @@
+{
+  "name": "trafiklits",
+  "version": "1.0.0",
+  "description": "Traffic lights scheduler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "SkonTeam",
+  "license": "ISC",
+  "dependencies": {
+    "jsonschema": "^1.1.0",
+    "lodash": "^4.7.0",
+    "rabbit.js": "^0.4.4"
+  }
+}

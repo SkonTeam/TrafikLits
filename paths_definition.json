@@ -1,0 +1,146 @@
+{
+  "NbrOfPaths": 2,
+  "NbrOfExits": 2,
+  "Paths": [
+    {
+      "pathNum": 1,
+      "exitNum": 3,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":2,
+          "adjacency":"left"
+        }
+      ]
+    },
+    {
+      "pathNum": 2,
+      "exitNum": 2,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 3,
+      "exitNum": 1,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 4,
+      "exitNum": 3,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 5,
+      "exitNum": 2,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 6,
+      "exitNum": 1,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 7,
+      "exitNum": 3,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 8,
+      "exitNum": 2,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "pathNum": 9,
+      "exitNum": 1,
+      "position":"left",
+      "nbrOfVehicles": 5,
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"right"
+        }
+      ]
+    }
+  ],
+  "Exits": [
+    {
+      "exitNum": 1,
+      "position":"bottom",
+      "adjacentPaths":[
+        {
+          "pathNum":1,
+          "adjacency":"left"
+        }
+      ]
+    },
+    {
+      "exitNum": 2,
+      "position":"right",
+      "adjacentPaths":[
+        {
+          "pathNum":2,
+          "adjacency":"right"
+        }
+      ]
+    },
+    {
+      "exitNum": 3,
+      "position":"top",
+      "adjacentPaths":[
+        {
+          "pathNum":2,
+          "adjacency":"right"
+        }
+      ]
+    }
+  ]
+}
