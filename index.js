@@ -1,7 +1,7 @@
 var lodash = require('lodash');
 var fs = require('fs');
 var schema = require('./validation');
-var utily = require('./utily')
+var utily = require('./utily');
 
 function toJson(obj) {
   return JSON.stringify(obj,null,2);
@@ -17,15 +17,15 @@ console.log('Paths : ' + JSON.stringify(PathsArray, null, 2));
 console.log('Exits : ' + JSON.stringify(ExitsArray, null, 2));
 
 var matInter = {
-  "matrixIntersection": [
+  matrixIntersection: [
     ['-1', 'L9', 'L8', 'E3', '-1', '-1'],
     ['-1', '0', '0', '0', '0', 'L7'],
     ['L1', '0', '0', '0', '0', 'L6'],
     ['L2', '0', '0', '0', '0', 'E2'],
     ['L3', '0', '0', '0', '0', '-1'],
-    ['-1', 'E1', '-1', 'L4', 'L5', '-1'],
+    ['-1', 'E1', '-1', 'L4', 'L5', '-1']
   ]
-}
+};
 
 var matrix = matInter.matrixIntersection;
 
@@ -41,5 +41,5 @@ console.log('Paths existing : ' + arePathsExisting);
 
 lodash.each(PathsArray,function (onePath) {
   matrix = utily.moveToExit(matrix,onePath);
-})
-console.log(toJson(matrix));
+});
+console.log(matrix);
