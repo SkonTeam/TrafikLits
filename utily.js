@@ -136,5 +136,39 @@ module.exports.moveToExit = function (matrix,PathObj) {
         }
       }
     }
+    if(movY == PathZeroExit_coord.y && movX != PathZeroExit_coord.x - 1){
+      if (movX < PathZeroExit_coord.x) {
+        while (movX != PathZeroExit_coord.x) {
+          movX++;
+          matrix[movY][movX] = self.pushToArray(matrix[movY][movX], PathZeroName);
+        }
+      }
+      if (movX > PathZeroExit_coord.x) {
+        while (movX != PathZeroExit_coord.x) {
+          movX--;
+          matrix[movY][movX] = self.pushToArray(matrix[movY][movX], PathZeroName);
+        }
+      }
+    }
+  if(movX == PathZeroExit_coord.x && movY != PathZeroExit_coord.y - 1){
+    if (movY < PathZeroExit_coord.y) {
+      while (movY != PathZeroExit_coord.y) {
+        movY++;
+        matrix[movY][movX] = self.pushToArray(matrix[movY][movX], PathZeroName);
+      }
+    }
+    if (movY > PathZeroExit_coord.y) {
+      while (movY != PathZeroExit_coord.y) {
+        movY--;
+        matrix[movY][movX] = self.pushToArray(matrix[movY][movX], PathZeroName);
+      }
+    }
+  }
   return matrix;
 };
+
+module.exports.extractConflicts = function (matrix, lane) {
+  lodash.each(matrix,function (oneRow) {
+    
+  })
+}
