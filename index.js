@@ -76,11 +76,39 @@ lodash.each(conflictList,function (confRow) {
     });
   });
 });
-console.log(lanesConfs);
+//console.log(lanesConfs);
 var sortedLanes = lodash.orderBy(lanesConfs,function (o) {
   return o.degree;
 },['desc']);
 console.log(sortedLanes);
+var coloredLanes = [];
 lodash.each(sortedLanes,function (obj) {
-  //TODO: group non conflicting lanes
+  var objFind = lodash.find(coloredLanes,function (o) {
+    var obDone = lodash.find(o.color,function (co) {
+      return obj.laneName == co;
+    });
+    return obDone == obj.laneName;
+  });
+  if(objFind == undefined) {
+    var objConfArray = obj.confArray;
+    var confDone = [];
+    console.log(lanesDone);
+    lodash.each(lanesDone, function (laneNum) {
+      if (objConfArray.indexOf(laneNum) == -1 && laneNum != undefined) {
+        if (obj.color == undefined) {
+          obj.color = [laneNum];
+        } else {
+          obj.color.push(laneNum);
+        }
+        confDone.push(laneNum);
+      }
+    });
+    lodash.each(confDone,function (o) {
+      lodash.remove(lanesDone,function (o2) {
+        return o == o2;
+      })
+    });
+    coloredLanes.push(obj);
+  }
 });
+console.log(coloredLanes);
