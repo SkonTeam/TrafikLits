@@ -112,3 +112,20 @@ lodash.each(sortedLanes,function (obj) {
   }
 });
 console.log(coloredLanes);
+var lanesWithWeight = [];
+lodash.each(coloredLanes,function (obj) {
+  var color = obj.color;
+  var colorWeight = 0;
+  lodash.each(color,function (lane) {
+    console.log(lane.substring(1));
+    var defPath = lodash.find(PathsArray,function (pp) {
+      return pp.pathNum == parseInt(lane.substring(1));
+    });
+    colorWeight = colorWeight + defPath.nbrOfVehicles ;
+  });
+  lanesWithWeight.push({
+    "color":color,
+    "weight":colorWeight / color.length
+  });
+});
+console.log(lanesWithWeight);

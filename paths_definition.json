@@ -6,7 +6,7 @@
       "pathNum": 1,
       "exitNum": 3,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 3,
       "adjacentPaths":[
         {
           "pathNum":2,
@@ -18,7 +18,7 @@
       "pathNum": 2,
       "exitNum": 2,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 7,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -30,7 +30,7 @@
       "pathNum": 3,
       "exitNum": 1,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 12,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -42,7 +42,7 @@
       "pathNum": 4,
       "exitNum": 3,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 1,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -54,7 +54,7 @@
       "pathNum": 5,
       "exitNum": 2,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 9,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -66,7 +66,7 @@
       "pathNum": 6,
       "exitNum": 1,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 4,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -78,7 +78,7 @@
       "pathNum": 7,
       "exitNum": 3,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 10,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -90,7 +90,7 @@
       "pathNum": 8,
       "exitNum": 2,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 15,
       "adjacentPaths":[
         {
           "pathNum":1,
@@ -102,7 +102,7 @@
       "pathNum": 9,
       "exitNum": 1,
       "position":"left",
-      "nbrOfVehicles": 5,
+      "nbrOfVehicles": 6,
       "adjacentPaths":[
         {
           "pathNum":1,
